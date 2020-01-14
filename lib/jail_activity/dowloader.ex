@@ -21,6 +21,6 @@ defmodule JailActivity.Downloader do
 
     Hound.end_session()
 
-    links
+    {:ok, links}
   end
 end

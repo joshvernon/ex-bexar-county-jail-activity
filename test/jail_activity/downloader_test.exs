@@ -3,7 +3,7 @@ defmodule JailActivity.DownloaderTest do
 
   @tag :selenium
   test "there are seven links" do
-    links = JailActivity.Downloader.get_report_links()
+    {:ok, links} = JailActivity.Downloader.get_report_links()
     assert length(links) == 7
   end
 end
