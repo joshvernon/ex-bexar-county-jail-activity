@@ -1,4 +1,4 @@
-defmodule JailActivity.Driver do
+defmodule JailActivity.Collector do
   use Hound.Helpers
 
   @doc """
