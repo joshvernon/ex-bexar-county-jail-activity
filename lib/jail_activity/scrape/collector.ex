@@ -1,4 +1,4 @@
-defmodule JailActivity.Collector do
+defmodule JailActivity.Scrape.Collector do
   use Hound.Helpers
 
   @doc """
