@@ -9,4 +9,8 @@ defmodule JailActivity.Core.Activity do
   def new(fields) do
     struct!(__MODULE__, fields)
   end
+
+  def add_charge(activity, charge) do
+    %{activity | charges: [charge | activity.charges]}
+  end
 end
