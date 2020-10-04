@@ -1,5 +1,15 @@
 defmodule JailActivity.Core.Charge do
-  defstruct ~w[w_number j_number court case_number description status action_agent bond_amount]a
+  defstruct [
+    :w_number,
+    :j_number,
+    :court,
+    :case_number,
+    :description,
+    :class,
+    :status,
+    :action_agent,
+    :bond_amount
+  ]
 
   def new(fields) do
     struct!(__MODULE__, fields)
